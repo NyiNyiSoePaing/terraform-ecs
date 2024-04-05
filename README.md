@@ -16,11 +16,20 @@
 
 # Table of Contents
 
-
-1. [Setting AWS Profile](#setting-aws-rofile)
+1. [Introduction](#introduction)
 
 2. [Deployment](#deployment)
+   - 2.1 [Setting AWS Profile](#setting-aws-profile)
+   - 2.2 [Infra Provisioning](#infra-provisioning)
 
+
+### Introduction
+
+Many open-source repositories support Terraform for setting up ECS (Elastic Container Service) with <b>a single capacity provider</b>, such as Fargate or EC2.
+
+Therefore, I've crafted Terraform configurations within this repository to support <b>multiple capacity providers</b>, including <b>EC2 autoscaling</b> capacity provider, <b>Fargate</b> capacity provider, and <b>Fargate spot </b>capacity provider.
+
+## Deployment
 ### Setting AWS Profile
 
 To configure your AWS profile for using this Terraform script, you have two options:
@@ -66,8 +75,7 @@ To configure your AWS profile for using this Terraform script, you have two opti
 
 > :warning: **Warning:** Make sure that the AWS profile you use has the necessary permissions to create and manage ECS resources.
 
-## Deployment
-
+### Infra Provisioning
 #### Update Variables: 
 - Before initiating the deployment process, ensure that all variables in your <b>var.tf</b> file are updated with the appropriate values. 
 - This includes variables such as AWS credentials, region, and any other parameters needed for your infrastructure.
