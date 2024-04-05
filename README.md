@@ -1,17 +1,12 @@
-## Terraform Script to Setup ECS
-<!-- PROJECT LOGO -->
+
+### Terraform Script to Setup ECS with multiple capacity providers
 
 <div align="center">
-    <img src="doc/devops.png" alt="Logo" width="180" height="80">
+    <img src="doc/diagram.png" alt="Logo" >
   </a>
 
-  <h3 align="center">Amazon Elastic Container Service</h3>
+  <h3 align="center">the architectural details that Terraform will provision!</h3>
 
-  <p align="center">
-    Terraform template to Setup ECS Architecture!
-    <br />
-    <br />
-  </p>
 </div>
 
 # Table of Contents
